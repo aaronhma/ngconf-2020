@@ -1,27 +1,35 @@
-# Ngconf20
+# ngConf 2020
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+This GitHub repository holds slides + code for Aaron Ma's ng-Conf 2020 talk on **A Journey into the World of Machine Learning with TensorFlow.js**.
 
-## Development server
+## Objective
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Our goal is to train a TensorFlow.js model that will take hand written digit images and learn
+to predict a score for each of the possible 10 classes (the digits 0-9), return the highest
+possible score as index to look up the value inside `trueLabels` array.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone the repository.
 
-## Build
+```bash
+$ git clone https://github.com/aaronhma/ngconf-2020.git
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. Get inside the repository.
 
-## Running unit tests
+```bash
+$ cd ngconf-2020
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Start the development server.
 
-## Running end-to-end tests
+```bash
+$ yarn start
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+4. Open your favorite browser
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```bash
+$ open http://localhost:4200
+```
