@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+
+import { DrawableDirective } from './directives/drawable.directive';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngconf20';
+  @ViewChild(DrawableDirective) canvas: DrawableDirective;
+
+  public predictedNumber = '';
+  public epochs: number | null = 10;
+
+  public async startTraining() {}
+
+  public predict(imageData: ImageData | null) {}
+
+  public clear() {
+    this.predictedNumber = '';
+    this.canvas.clear();
+  }
 }

@@ -1,0 +1,94 @@
+.container {
+  width: 580px;
+  margin-top: 30px;
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+      background: lightgray;
+    }
+  }
+}
+
+.epochs-section {
+  margin-bottom: 32px;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+
+  input {
+    width: 80px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ef6c00;
+  }
+
+  button {
+    margin-left: 10px;
+  }
+}
+
+.drawing-board {
+  h3 {
+    margin-bottom: 16px;
+  }
+
+  .wrapper {
+    display: inline-flex;
+    justify-content: flex-end;
+    border: 10px solid lighten(#ef6c00, 20%);
+    transition: border-color .2s ease-in;
+
+    &:hover {
+      border: 10px solid #ef6c00;
+    }
+  }
+
+  canvas {
+    cursor: crosshair;
+  }
+
+  button {
+    position: relative;
+    top: -8px;
+    margin-left: 12px;
+  }
+}
+
+.prediction {
+  height: 120px;
+  margin: 0 0 24px;
+
+  strong {
+    font-size: 3em;
+  }
+}
+
+footer {
+  p {
+    font-size: 18px;
+    color: rgb(175, 175, 175);
+  }
+}
+
+p, h3 {
+  color: rgb(75, 75, 75);
+}
+
+.highlight {
+  color: #ff6f00;
+}
