@@ -2,13 +2,16 @@
 
 This GitHub repository holds slides + code for Aaron Ma's ng-Conf 2020 talk on **A Journey into the World of Machine Learning with TensorFlow.js**.
 
+- Slides: [Click here to access Google Slides](https://bit.ly/ngConf20)
+- Live Demo: [Click here to access demo](http://aaronma.me/ngconf-2020/)
+
 ## Objective
 
 Our goal is to train a TensorFlow.js model that will take hand written digit images and learn
 to predict a score for each of the possible 10 classes (the digits 0-9), return the highest
 possible score as index to look up the value inside `trueLabels` array.
 
-![Application](src/assets/images/application.jpg)
+![Failed to load image. Try again?](src/assets/images/application.jpg)
 
 ## Getting Started
 
