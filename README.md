@@ -8,6 +8,8 @@ Our goal is to train a TensorFlow.js model that will take hand written digit ima
 to predict a score for each of the possible 10 classes (the digits 0-9), return the highest
 possible score as index to look up the value inside `trueLabels` array.
 
+![Application](src/assets/images/application.jpg)
+
 ## Getting Started
 
 1. Clone the repository.
