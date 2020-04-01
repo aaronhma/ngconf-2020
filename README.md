@@ -38,3 +38,7 @@ $ yarn start
 ```bash
 $ open http://localhost:4200
 ```
+
+--OR--
+
+[Click here to access Angular localhost server](http://localhost:4200)
