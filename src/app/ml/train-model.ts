@@ -5,6 +5,7 @@ import { showTrainingStatus } from './visualization/visual-helper';
 import { MnistData } from './dataset/mnist-data.class';
 
 export function trainModel(epochs: number, model: Sequential, data: MnistData) {
+  // @TODO: Experiment with these hyperparameters to get higher accuracy and lower loss;
   const BATCH_SIZE = 512;
   const TRAIN_DATA_SIZE = 5500;
   const TEST_DATA_SIZE = 1000;

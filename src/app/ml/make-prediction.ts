@@ -20,9 +20,9 @@ export function makePrediction(
 }
 
 export function doPrediction(
-  model: Sequential,
-  data: MnistData,
-  testDataSize = 500
+  model: Sequential, // Let's use a Sequential model!
+  data: MnistData, // Use MNIST data.
+  testDataSize = 500 // Test data size is 500
 ): {
   prediction: Tensor<any>;
   labels: Tensor<any>;
@@ -30,6 +30,7 @@ export function doPrediction(
   const testData = data.nextBatch('TEST', testDataSize);
   const inputs = testData.inputs.reshape([testDataSize, 28, 28, 1]);
   const labels = testData.targets.argMax(-1);
+  // Makes sure model.predict(inputs) is a 2-dimensional Tensor
   const prediction = (model.predict(inputs) as Tensor2D).argMax(-1);
 
   inputs.dispose();

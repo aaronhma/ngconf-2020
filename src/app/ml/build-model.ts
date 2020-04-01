@@ -3,7 +3,7 @@ import { sequential, layers, train, Sequential } from '@tensorflow/tfjs';
 // Define the architecture of the model.
 // Setup Layers & Compile model
 export function buildModel(): Sequential {
-  const model = sequential();
+  const model = sequential(); // Sequential model
   const { conv2d, maxPooling2d, flatten, dense } = layers;
 
   // In the first layer of convolutional neural network we have
@@ -15,7 +15,7 @@ export function buildModel(): Sequential {
       kernelSize: 5,
       filters: 8,
       strides: 1,
-      activation: 'relu',
+      activation: 'relu', // RELU: Returns maximum of 0 and input
       kernelInitializer: 'varianceScaling'
     })
   );
@@ -54,12 +54,15 @@ export function buildModel(): Sequential {
   );
 
   // Choose an optimizer, loss function and accuracy metric,
-  // then compile and return the model
+  // then compile and return the model.
+  // Optimizer - Tell our model how to improve. 
+  // Loss      - Sets our way to evaluate our model's error(loss).
+  // Metrics   - Evaluate the performance of our model.
   model.compile({
-    optimizer: train.adam(),
-    loss: 'categoricalCrossentropy',
-    metrics: ['accuracy']
+    optimizer: train.adam(), // The optimizer we’re using here is the Adam optimizer. Adam, aka Adaptive Moment Estimation, is a schotastic gradient descent method.
+    loss: 'categoricalCrossentropy', // Since the data is all handwritten digits with labels between 0-9 , we will use Categorical Crossentropy which is great for performing multi-class classification, which we are using here.
+    metrics: ['accuracy'] // How we're evaluating our model.
   });
 
-  return model;
+  return model; // Returns our model
 }
