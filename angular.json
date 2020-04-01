@@ -121,8 +121,17 @@
               "devServerTarget": "ngconf20:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "http://aaronma.me/ngconf-2020/",
+            "name": "Aaron Ma",
+            "email": "aaronhma@gmail.com"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ngconf20"
 }

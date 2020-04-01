@@ -16,8 +16,8 @@ export class MnistData {
   private NUM_TEST_DATA = this.NUM_DATASET_TOTAL - this.NUM_TRAIN_DATA;
 
   // Input Data source, and Target Label source
-  private MNIST_IMAGES_SPRITE_PATH = '/assets/images/mnist.png';
-  private MNIST_LABELS_PATH = '/assets/labels/mnist_labels_uint8';
+  private MNIST_IMAGES_SPRITE_PATH = 'assets/images/mnist.png';
+  private MNIST_LABELS_PATH = 'assets/labels/mnist_labels_uint8';
 
   private IMAGE_SIZE = 784;
   private NUM_LABEL_TARGET = 10;
